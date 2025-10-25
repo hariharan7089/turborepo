@@ -1,22 +1,21 @@
-"use client"
-import { useState } from "react";
-import styles from "./page.module.css"
+import React, { useState } from "react";
+import "./Login.css";
 
-export default function Home() {
+export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  // const handleLogin = (e) => {
-  //   e.preventDefault();
-  //   alert(`Email: ${email}\nPassword: ${password}`);
-  // };
+  const handleLogin = (e) => {
+    e.preventDefault();
+    alert(`Email: ${email}\nPassword: ${password}`);
+  };
 
   return (
-    <div className={styles.loginContainer}>
-      <form className={styles.loginBox} >
+    <div className="login-container">
+      <form className="login-box" onSubmit={handleLogin}>
         <h2>Login</h2>
 
-        <div className={styles.inputGroup}>
+        <div className="input-group">
           <label>Email</label>
           <input
             type="email"
@@ -26,7 +25,7 @@ export default function Home() {
           />
         </div>
 
-        <div className={styles.inputGroup}>
+        <div className="input-group">
           <label>Password</label>
           <input
             type="password"
@@ -38,7 +37,7 @@ export default function Home() {
 
         <button type="submit">Login</button>
 
-        <p className={styles.signupText}>
+        <p className="signup-text">
           Don’t have an account? <a href="#">Sign up</a>
         </p>
       </form>

@@ -186,3 +186,77 @@ button.secondary {
     filter: invert();
   }
 }
+.loginContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #4a90e2, #9013fe);
+}
+
+.loginBox {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.15);
+  width: 350px;
+  text-align: center;
+}
+
+.loginBox h2 {
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.inputGroup {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.inputGroup label {
+  display: block;
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 6px;
+}
+
+.inputGroup input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  font-size: 15px;
+}
+
+.inputGroup input:focus {
+  border-color: #4a90e2;
+}
+
+/* ✅ Scoped button with .loginBox */
+.loginBox button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #4a90e2;
+  color: white;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.loginBox button:hover {
+  background-color: #357ae8;
+}
+
+.signupText {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.signupText a {
+  color: #4a90e2;
+  text-decoration: none;
+}
+
